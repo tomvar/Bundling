@@ -4,7 +4,6 @@ for(i in requiredPackages){
   if(!require(i,character.only = TRUE)) install.packages(i)
   library(i,character.only = TRUE) }
 
-
 # za³odowanie potrzebnych pakietów
 #
 #  require(foreach)

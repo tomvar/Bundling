@@ -8,7 +8,6 @@
 # beta - parameter of sope economics beta = 0 --> neutral, beta > 0 complementary, beta < 0 substitution
 # FC - fixed cost
 
-
 Cost.Bundle  <- function(n.1,n.2,c.1,c.2,alfa,beta,FC){
 
   cost <- ifelse(n.1==n.2, ((1-beta)*(c.1*n.1+c.2*n.2))^(1- alfa),
