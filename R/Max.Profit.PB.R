@@ -1,3 +1,18 @@
+#' Find maximum profit for Pure Bundling strategy
+#'
+#' @param r1.r2 NX2 reservation prices of two goods []
+#' @param pb.min.max Vector
+#' @param c.1 good 1 parameter of production cost
+#' @param c.2 good 1 parameter of production cost
+#' @param alfa parameter of scale economics alfa = 0 --> CRS, alfa < 0 --> IRS, alfa < 0 --> DRS
+#' @param beta parameter of sope economics  beta = 0 --> neutral, beta > 0 complementary, beta < 0 substitution
+#' @param teta parameter of complementary and substitution of goods beta = 0 --> neutral, beta > 0 complementary, beta < 0 substitution
+#' @param FC fixed Cost of production
+#'
+#' @return max.profit
+#'
+#' @export
+
 Max.Profit.PB  <- function(r1.r2, pb.min.max, c.1, c.2, alfa, beta,teta, FC) {
 
   numerate <- max(pb.min.max)
