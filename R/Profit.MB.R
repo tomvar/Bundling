@@ -1,13 +1,17 @@
-# Profit function for MB
-# Input
-# r1.r2 - Matrix of reservation prices
-# prices.mb - matrix of prices
-# c.1 - cost parameter of good 1
-# c.2 - cost parameter of good 2
-# alfa - parameter of scale economics alfa = 1 --> CRS, alfa < 1 --> DRS
-# beta - parameter of sope economics beta = 0 --> neutral, beta < 0 complementary, beta > 0 substitution
-# FC - fixed cost
-
+#' Profit function for MB
+#'
+#' @param r1.r2 NX2 reservation prices of two goods []
+#' @param prices.mb - matrix of prices
+#' @param c.1 good 1 parameter of production cost
+#' @param c.2 good 1 parameter of production cost
+#' @param alfa parameter of scale economics alfa = 0 --> CRS, alfa < 0 --> IRS, alfa < 0 --> DRS
+#' @param beta parameter of sope economics  beta = 0 --> neutral, beta > 0 complementary, beta < 0 substitution
+#' @param teta parameter of complementary and substitution of goods beta = 0 --> neutral, beta > 0 complementary, beta < 0 substitution
+#' @param FC fixed Cost of production
+#'
+#' @return max profit
+#'
+#' @export
 Profit.MB <- function(r1.r2,prices.mb,c.1,c.2,alfa,beta,teta,FC){
 
   p.1 <- prices.mb[1]

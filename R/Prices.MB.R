@@ -1,4 +1,9 @@
-# This function create wector of prices for Mixt Bundling
+#' This function create wector of prices for Mixt Bundling
+#' @param pb.min.max Vector
+#'
+#' @return wector of prices for Mixt Bundling
+#'
+#' @export
 
 Prices.MB  <- function(p.1.min.max, p.2.min.max, p.b.min.max, step) {
 

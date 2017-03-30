@@ -1,4 +1,11 @@
-# price of bundle
+#' This function create wector of prices for Pure Components
+#'
+#' @param pb.min.max Vector
+#'
+#' @return wector of prices for Pure Bundling
+#'
+#' @export
+
 Prices.PB  <- function(pb.min.max, step) {
 
   pb.min     <- pb.min.max[1]     # min price of bundle

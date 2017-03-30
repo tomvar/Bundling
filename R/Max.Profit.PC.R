@@ -10,7 +10,7 @@
 #' @param teta parameter of complementary and substitution of goods beta = 0 --> neutral, beta > 0 complementary, beta < 0 substitution
 #' @param FC fixed Cost of production
 #'
-#' @return max.profit
+#' @return max profit
 #'
 #' @export
 
@@ -25,6 +25,7 @@ Max.Profit.PC  <- function(r1.r2, p.1.min.max, p.2.min.max, c.1, c.2, alfa, beta
 
   p.1.min.max <- p.1.min.max/numerate
   p.2.min.max <- p.2.min.max/numerate
+
   step  <- 0.01
   prices.pc <- Prices.PC(p.1.min.max, p.2.min.max, step)
 

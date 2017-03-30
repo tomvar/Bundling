@@ -1,4 +1,14 @@
-# This function create wector of prices for Pure Components
+#' This function create wector of prices for Pure Components
+#'
+#' @param p.1.min.max Vector
+#' @param p.2.min.max  dfg
+#'
+#' @return wector of prices for Pure Components
+#'
+#' @export
+
+
+
 
 Prices.PC  <- function(p1.min.max, p2.min.max, step) {
 

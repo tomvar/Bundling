@@ -1,12 +1,17 @@
-# The outer of TC
-# Inputs:
-# n.1 - number of units of good 1
-# n.2 - number of units of good 2
-# c.1 - cost parameter of good 1
-# c.2 - cost parameter of good 2
-# alfa - parameter of scale economics alfa = 1 --> CRS, alfa < 1 --> DRS
-# beta - parameter of sope economics beta = 0 --> neutral, beta < 0 complementary, beta > 0 substitution
-# FC - fixed cost
+#' The outer of TC
+#'
+#' @param n.1 - number of units of good 1
+#' @param n.2 - number of units of good 2
+#' @param c.1 good 1 parameter of production cost
+#' @param c.2 good 1 parameter of production cost
+#' @param alfa parameter of scale economics alfa = 0 --> CRS, alfa < 0 --> IRS, alfa < 0 --> DRS
+#' @param beta parameter of sope economics  beta = 0 --> neutral, beta > 0 complementary, beta < 0 substitution
+#' @param teta parameter of complementary and substitution of goods beta = 0 --> neutral, beta > 0 complementary, beta < 0 substitution
+#' @param FC fixed Cost of production
+#'
+#' @return The TC cost function:
+#'
+#' @export
 
 
 Cost.Bundle.Outer <- function(N,c.1,c.2,alfa, beta, FC){
