@@ -6,9 +6,4 @@
 #'  \item{TV}{Reservation prices of TV cable services}
 #'  \item{INT}{Reservation prices of Interet cable services}
 #' }
-#' @examples
-#' \dontrun{
-#'  print(r.1.r2.cable)
-#' }
-#' @export
-"r.1.r2.cable"
+"r1.r2.cable"

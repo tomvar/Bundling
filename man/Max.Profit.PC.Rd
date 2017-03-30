@@ -31,9 +31,3 @@ max.profit
 \description{
 Find maximum profit for Pure componenets strategy
 }
-\examples{
-hello_world()
-hello_world(excited = TRUE)
-hello_world(to_print = "Hi world")
-
-}

@@ -12,11 +12,6 @@
 #'
 #' @return max.profit
 #'
-#' @examples
-#' hello_world()
-#' hello_world(excited = TRUE)
-#' hello_world(to_print = "Hi world")
-#'
 #' @export
 
 Max.Profit.PC  <- function(r1.r2, p.1.min.max, p.2.min.max, c.1, c.2, alfa, beta, teta, FC) {
