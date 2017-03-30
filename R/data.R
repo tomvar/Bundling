@@ -3,8 +3,8 @@
 #' @source Data from reserch \url{http://www.sciencedirect.com/science/article/pii/S0308596117300435}
 #' @format A data frame with columns:
 #' \describe{
-#'  \item{r.TV}{reservation price of TV cable services}
-#'  \item{r.INT}{reservation price of Interet cable services}
+#'  \item{TV}{Reservation prices of TV cable services}
+#'  \item{INT}{Reservation prices of Interet cable services}
 #' }
 #' @examples
 #' \dontrun{

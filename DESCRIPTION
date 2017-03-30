@@ -1,12 +1,11 @@
 Package: bundling
 Title: Profitability of bundling strategies
-Version: 1.0-1
+Version: 1.0-2
 Author: Tomasz Kopczewski <tkopczewski@wne.uw.edu.pl>
 Maintainer: Tomasz Kopczewski <tkopczewski@wne.uw.edu.pl>
-Description: 
+Description: Profitability of bundling strategies
 License: GPL (>= 2)
 Encoding: UTF-8
 LazyData: true
 URL: 
-
-
+RoxygenNote: 6.0.0
