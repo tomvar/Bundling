@@ -1,11 +1,12 @@
 Package: bundling
-Type: Package
-Title: What the Package Does (Title Case)
-Version: 0.1.0
-Author: Who wrote it
-Maintainer: The package maintainer <yourself@somewhere.net>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
-License: What license is it under?
+Title: Profitability of bundling strategies
+Version: 1.0-1
+Author: Tomasz Kopczewski <tkopczewski@wne.uw.edu.pl>
+Maintainer: Tomasz Kopczewski <tkopczewski@wne.uw.edu.pl>
+Description: 
+License: GPL (>= 2)
 Encoding: UTF-8
 LazyData: true
+URL: 
+
+

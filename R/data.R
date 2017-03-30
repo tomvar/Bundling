@@ -1,0 +1,13 @@
+#' Reservation prices of TV and Interent
+#'
+#' @source Data from reserch \url{http://www.sciencedirect.com/science/article/pii/S0308596117300435}
+#' @format A data frame with columns:
+#' \describe{
+#'  \item{r.TV}{reservation price of TV cable services}
+#'  \item{r.INT}{reservation price of Interet cable services}
+#' }
+#' @examples
+#' \dontrun{
+#'  r.1.r2.cable
+#' }
+"r.1.r2.cable"

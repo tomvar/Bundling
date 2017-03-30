@@ -1,14 +1,23 @@
-#' Find maximum profit Pure componenets
-#' @param r1.r2 gsdfr
-#' @param p.1.min.max dfgsdgf
+#' Find maximum profit for Pure componenets strategy
+#'
+#' @param r1.r2 NX2 reservation prices of two goods []
+#' @param p.1.min.max Vector
 #' @param p.2.min.max  dfg
-#' @param c.1 dfgdsf
-#' @param c.2 dfgsdfg
-#' @param alfa dfsbdf
-#' @param beta dfdg
-#' @param teta dfgdf
-#' @param FC dfgdf
-#' @examples dfsggdsf
+#' @param c.1 good 1 parameter of production cost
+#' @param c.2 good 1 parameter of production cost
+#' @param alfa parameter of scale economics alfa = 0 --> CRS, alfa < 0 --> IRS, alfa < 0 --> DRS
+#' @param beta parameter of sope economics  beta = 0 --> neutral, beta > 0 complementary, beta < 0 substitution
+#' @param teta parameter of complementary and substitution of goods beta = 0 --> neutral, beta > 0 complementary, beta < 0 substitution
+#' @param FC fixed Cost of production
+#'
+#' @return max.profit
+#'
+#' @examples
+#' hello_world()
+#' hello_world(excited = TRUE)
+#' hello_world(to_print = "Hi world")
+#'
+#' @export
 
 Max.Profit.PC  <- function(r1.r2, p.1.min.max, p.2.min.max, c.1, c.2, alfa, beta, teta, FC) {
 
