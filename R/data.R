@@ -8,6 +8,7 @@
 #' }
 #' @examples
 #' \dontrun{
-#'  r.1.r2.cable
+#'  print(r.1.r2.cable)
 #' }
+#' @export
 "r.1.r2.cable"

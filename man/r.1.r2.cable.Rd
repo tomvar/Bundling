@@ -20,7 +20,7 @@ Reservation prices of TV and Interent
 }
 \examples{
 \dontrun{
- r.1.r2.cable
+ print(r.1.r2.cable)
 }
 }
 \keyword{datasets}
