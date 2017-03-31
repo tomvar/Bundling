@@ -84,3 +84,4 @@ Profit.PC<- function(r1.r2,price.pc,c.1,c.2,alfa,beta,teta,FC){
 return(output.PC)
 }
 
+
