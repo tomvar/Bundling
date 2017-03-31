@@ -1,17 +1,23 @@
-#' Profit function for PB
+#' Profit, Consumer surplus, cost, demands for Pure Bundling strategy
+
+#' @param r1.r2 N valuations of good 1 and 2  - reserversion prices r1, r2
+#' @param price.pc Monopoly price of bundle [price.pc <- c(p.b)]
+#' @param c.1  Parameter of production cost of good 1
+#' @param c.2  Parameter of production cost of good 1
+#' @param alfa Parameter of scale economics alfa = 0 --> CRS, alfa < 0 --> IRS, alfa < 0 --> DRS
+#' @param beta Parameter of sope economics  beta = 0 --> neutral, beta > 0 complementary in proiduction, beta < 0 substitution in production
+#' @param teta Parameter of complementary and substitution of goods beta = 0 --> neutral, beta > 0 complementary in consumption, beta < 0 substitution in consumption
+#' @param FC Fixed Cost of production
 #'
-#' @param r1.r2 NX2 reservation prices of two goods []
-#' @param prices.pb - matrix of prices
-#' @param c.1 good 1 parameter of production cost
-#' @param c.2 good 1 parameter of production cost
-#' @param alfa parameter of scale economics alfa = 0 --> CRS, alfa < 0 --> IRS, alfa < 0 --> DRS
-#' @param beta parameter of sope economics  beta = 0 --> neutral, beta > 0 complementary, beta < 0 substitution
-#' @param teta parameter of complementary and substitution of goods beta = 0 --> neutral, beta > 0 complementary, beta < 0 substitution
-#' @param FC fixed Cost of production
-#'
-#' @return max profit
+#' @return For a given: i. N valuations of r1 ,r2 ii. Monopoly prices p1, p2 iii. Technology
+#'  profit  - profit for Pure Bundle strategy
+#'  c.s     - Consumer surplus for Pure Componenets strategy
+#'  t.c     - cost of production
+#'  no.buy  - number of consumers which do not buy any good
+#'  buy.b   - number of consumers which buy bundle of good 1 and good 2
 #'
 #' @export
+
 Profit.PB <- function(r1.r2, prices.pb, c.1, c.2, alfa, beta, teta, FC)
 {
   p.b <- prices.pb

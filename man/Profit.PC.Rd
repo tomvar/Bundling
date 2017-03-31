@@ -2,30 +2,50 @@
 % Please edit documentation in R/Profit.PC.R
 \name{Profit.PC}
 \alias{Profit.PC}
-\title{Find profit for Pure componenets strategy}
+\title{Profit, Consumer surplus, cost, demands for Pure Componenets strategy}
 \usage{
 Profit.PC(r1.r2, price.pc, c.1, c.2, alfa, beta, teta, FC)
 }
 \arguments{
-\item{r1.r2}{NX2 reservation prices of two goods []}
+\item{r1.r2}{N valuations of good 1 and 2  - reserversion prices r1, r2}
 
-\item{price.pc}{Vector}
+\item{price.pc}{A vector of monopoly prices of good 1 and 2 [price.pc <- c(p1, p2)]}
 
-\item{c.1}{good 1 parameter of production cost}
+\item{c.1}{Parameter of production cost of good 1}
 
-\item{c.2}{good 1 parameter of production cost}
+\item{c.2}{Parameter of production cost of good 1}
 
-\item{alfa}{parameter of scale economics alfa = 0 --> CRS, alfa < 0 --> IRS, alfa < 0 --> DRS}
+\item{alfa}{Parameter of scale economics alfa = 0 --> CRS, alfa < 0 --> IRS, alfa < 0 --> DRS}
 
-\item{beta}{parameter of sope economics  beta = 0 --> neutral, beta > 0 complementary, beta < 0 substitution}
+\item{beta}{Parameter of sope economics  beta = 0 --> neutral, beta > 0 complementary in proiduction, beta < 0 substitution in production}
 
-\item{teta}{parameter of complementary and substitution of goods beta = 0 --> neutral, beta > 0 complementary, beta < 0 substitution}
+\item{teta}{Parameter of complementary and substitution of goods beta = 0 --> neutral, beta > 0 complementary in consumption, beta < 0 substitution in consumption}
 
-\item{FC}{fixed Cost of production}
+\item{FC}{Fixed Cost of production}
 }
 \value{
-max profit
+For a given: i. N valuations of r1 ,r2 ii. Monopoly prices p1, p2 iii. Technology
+ profit  - profit for Pure Componenets strategy
+ c.s     - Consumer surplus for Pure Componenets strategy
+ t.c     - cost of production
+ no.buy  - number of consumers which do not buy any good
+ buy.1   - number of consumers which buy good 1
+ buy.2   - number of consumers which buy good 2
+ buy.1.2 - number of consumers which buy separately good 1 and good 2
 }
 \description{
-Find profit for Pure componenets strategy
+Profit, Consumer surplus, cost, demands for Pure Componenets strategy
+}
+\examples{
+r1.r2 <- r1.r2.cable  # Valuations of TV and Internet
+price.pc <- c(20, 30) # monopoly price of TV and Internet
+demand.p.c -> Profit.PC(r1.r2,price.pc,0,0,0,0,0,0)
+plot(r1.r2, type = "p", col="transparent", xlab="r1", ylab="r2", main = " PC")
+points(demand.p.c$no.buy, pch = 8, col = "gray80")
+points(demand.p.c$buy.1, pch = 17, col = "gray50 ")
+points(demand.p.c$buy.2, pch = 19, col = "gray50")
+points(demand.p.c$buy.1.2, pch = 18, col = "gray10")
+legend("topright", col = c("transparent","gray80","gray50 ", "gray50 ","gray10"), pch=c(1,8,17,19,18), legend=c("", "no buy","buy y1", "buy y2" , "buy y1&y2"), bty="n")
+abline(h = demand.p.c$p.2, v = demand.p.c$p.1, lty = 2)
+
 }

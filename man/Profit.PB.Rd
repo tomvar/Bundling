@@ -2,30 +2,35 @@
 % Please edit documentation in R/Profit.PB.R
 \name{Profit.PB}
 \alias{Profit.PB}
-\title{Profit function for PB}
+\title{Profit, Consumer surplus, cost, demands for Pure Bundling strategy}
 \usage{
 Profit.PB(r1.r2, prices.pb, c.1, c.2, alfa, beta, teta, FC)
 }
 \arguments{
-\item{r1.r2}{NX2 reservation prices of two goods []}
+\item{r1.r2}{N valuations of good 1 and 2  - reserversion prices r1, r2}
 
-\item{prices.pb}{- matrix of prices}
+\item{c.1}{Parameter of production cost of good 1}
 
-\item{c.1}{good 1 parameter of production cost}
+\item{c.2}{Parameter of production cost of good 1}
 
-\item{c.2}{good 1 parameter of production cost}
+\item{alfa}{Parameter of scale economics alfa = 0 --> CRS, alfa < 0 --> IRS, alfa < 0 --> DRS}
 
-\item{alfa}{parameter of scale economics alfa = 0 --> CRS, alfa < 0 --> IRS, alfa < 0 --> DRS}
+\item{beta}{Parameter of sope economics  beta = 0 --> neutral, beta > 0 complementary in proiduction, beta < 0 substitution in production}
 
-\item{beta}{parameter of sope economics  beta = 0 --> neutral, beta > 0 complementary, beta < 0 substitution}
+\item{teta}{Parameter of complementary and substitution of goods beta = 0 --> neutral, beta > 0 complementary in consumption, beta < 0 substitution in consumption}
 
-\item{teta}{parameter of complementary and substitution of goods beta = 0 --> neutral, beta > 0 complementary, beta < 0 substitution}
+\item{FC}{Fixed Cost of production}
 
-\item{FC}{fixed Cost of production}
+\item{price.pc}{Monopoly price of bundle [price.pc <- c(p.b)]}
 }
 \value{
-max profit
+For a given: i. N valuations of r1 ,r2 ii. Monopoly prices p1, p2 iii. Technology
+ profit  - profit for Pure Bundle strategy
+ c.s     - Consumer surplus for Pure Componenets strategy
+ t.c     - cost of production
+ no.buy  - number of consumers which do not buy any good
+ buy.b   - number of consumers which buy bundle of good 1 and good 2
 }
 \description{
-Profit function for PB
+Profit, Consumer surplus, cost, demands for Pure Bundling strategy
 }
