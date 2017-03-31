@@ -51,7 +51,8 @@ points(demand.p.c$no.buy, pch = 8, col = "gray80")
 points(demand.p.c$buy.1, pch = 17, col = "gray50 ")
 points(demand.p.c$buy.2, pch = 19, col = "gray50")
 points(demand.p.c$buy.1.2, pch = 18, col = "gray10")
-legend("topright", col = c("transparent","gray80","gray50 ", "gray50 ","gray10"), pch=c(1,8,17,19,18), legend=c("", "no buy","buy y1", "buy y2" , "buy y1&y2"), bty="n")
+legend("topright", col = c("transparent","gray80","gray50 ", "gray50 ","gray10"),
+pch=c(1,8,17,19,18), legend=c("", "no buy","buy y1", "buy y2" , "buy y1&y2"), bty="n")
 abline(h = demand.p.c$p.2, v = demand.p.c$p.1, lty = 2)
 
 }

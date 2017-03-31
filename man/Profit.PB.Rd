@@ -21,7 +21,7 @@ Profit.PB(r1.r2, prices.pb, c.1, c.2, alfa, beta, teta, FC)
 
 \item{FC}{Fixed Cost of production}
 
-\item{price.pc}{Monopoly price of bundle [price.pc <- c(p.b)]}
+\item{price.pb}{Monopoly price of bundle [price.pb <- c(p.b)]}
 }
 \value{
 For a given: i. N valuations of r1 ,r2 ii. Monopoly prices p1, p2 iii. Technology

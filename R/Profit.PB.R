@@ -1,6 +1,6 @@
 #' Demands, Profits, Consumer Surpluses, Cost for Pure Bundling strategy
 #' @param r1.r2 N valuations of good 1 and 2  - reserversion prices r1, r2
-#' @param price.pc Monopoly price of bundle [price.pc <- c(p.b)]
+#' @param price.pb Monopoly price of bundle [price.pb <- c(p.b)]
 #' @param c.1  Parameter of production cost of good 1
 #' @param c.2  Parameter of production cost of good 1
 #' @param alfa Parameter of scale economics alfa = 0 --> CRS, alfa < 0 --> IRS, alfa < 0 --> DRS
