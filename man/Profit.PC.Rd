@@ -37,10 +37,10 @@ For a given: i. N valuations of r1 ,r2 ii. Monopoly prices p1, p2 iii. Technolog
 Profit, Consumer surplus, cost, demands for Pure Componenets strategy
 }
 \examples{
-r1.r2 <- r1.r2.cable  # Valuations of TV and Internet
-price.pc <- c(20, 30) # monopoly price of TV and Internet
-demand.p.c -> Profit.PC(r1.r2,price.pc,0,0,0,0,0,0)
-plot(r1.r2, type = "p", col="transparent", xlim = c(0, max(r1.r2[1,])), ylim = c(0, max(r1.r2[2,])) xlab="r1", ylab="r2", main = " PC")
+r1.r2      <- r1.r2.cable  # Valuations of TV and Internet
+price.pc   <- c(20, 30) # monopoly price of TV and Internet
+demand.p.c <- Profit.PC(r1.r2,price.pc,0,0,0,0,0,0)
+plot(r1.r2, type = "p", col="transparent", xlab="r1 TV", ylab="r2 INTERNET", main = " PC")
 points(demand.p.c$no.buy, pch = 8, col = "gray80")
 points(demand.p.c$buy.1, pch = 17, col = "gray50 ")
 points(demand.p.c$buy.2, pch = 19, col = "gray50")
