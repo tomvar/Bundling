@@ -2,7 +2,7 @@
 % Please edit documentation in R/Profit.PC.R
 \name{Profit.PC}
 \alias{Profit.PC}
-\title{Profit, Consumer surplus, cost, demands for Pure Componenets strategy}
+\title{Demands, Profits, Consumer Surpluses,for Pure Componenets strategy}
 \usage{
 Profit.PC(r1.r2, price.pc, c.1, c.2, alfa, beta, teta, FC)
 }
@@ -34,12 +34,18 @@ For a given: i. N valuations of r1 ,r2 ii. Monopoly prices p1, p2 iii. Technolog
  buy.1.2 - number of consumers which buy separately good 1 and good 2
 }
 \description{
-Profit, Consumer surplus, cost, demands for Pure Componenets strategy
+Demands, Profits, Consumer Surpluses,for Pure Componenets strategy
 }
 \examples{
-r1.r2      <- r1.r2.cable  # Valuations of TV and Internet
-price.pc   <- c(20, 30) # monopoly price of TV and Internet
-demand.p.c <- Profit.PC(r1.r2,price.pc,0,0,0,0,0,0)
+c.1  <-  0.5   # parametr of cost of y1 (MC1 for beta = 0, alfa = 0)
+c.2  <-  0.5   # parametr of cost of y2 (MC1 for beta = 0, alfa = 0)
+beta <-  0     # parametr of scope economics
+alfa <-  0     # parametr of scale economics
+teta <-  0     # parametr of degree of contingency
+FC <- 250      # Fix Costs
+r1.r2 <- r1.r2.cable    # Valuations of TV and Internet
+price.pc   <- c(20, 30) # Monopoly price of TV and Internet
+demand.p.c <- Profit.PC(r1.r2,price.pc,c.1, c.2, alfa, beta, teta, FC)
 plot(r1.r2, type = "p", col="transparent", xlab="r1 TV", ylab="r2 INTERNET", main = " PC")
 points(demand.p.c$no.buy, pch = 8, col = "gray80")
 points(demand.p.c$buy.1, pch = 17, col = "gray50 ")

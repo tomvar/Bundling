@@ -1,5 +1,4 @@
-#' Profit, Consumer surplus, cost, demands for Pure Bundling strategy
-
+#' Demands, Profits, Consumer Surpluses, Cost for Pure Bundling strategy
 #' @param r1.r2 N valuations of good 1 and 2  - reserversion prices r1, r2
 #' @param price.pc Monopoly price of bundle [price.pc <- c(p.b)]
 #' @param c.1  Parameter of production cost of good 1
@@ -15,6 +14,25 @@
 #'  t.c     - cost of production
 #'  no.buy  - number of consumers which do not buy any good
 #'  buy.b   - number of consumers which buy bundle of good 1 and good 2
+#' @examples
+#' c.1  <-  0.5   # parametr of cost of y1 (MC1 for beta = 0, alfa = 0)
+#' c.2  <-  0.5   # parametr of cost of y2 (MC1 for beta = 0, alfa = 0)
+#' beta <-  0     # parametr of scope economics
+#' alfa <-  0     # parametr of scale economics
+#' teta <-  0     # parametr of degree of contingency
+#' FC <- 250      # Fix Costs
+#' r1.r2      <- r1.r2.cable  # Valuations of TV and Internet
+#' price.mb   <- c(20,40,50)  # monopoly prices of TV, INTERNET and  bundle TV and Internet
+#' demand.m.b <- Profit.MB(r1.r2,price.mb, c.1, c.2, alfa, beta, teta, FC)
+#' plot(r1.r2, type = "p", col="transparent", xlab="r1", ylab="r2", main = "MB" )
+#' points(demand.m.b$no.buy , pch = 8, col  = "gray80" )
+#' points(demand.m.b$buy.1 , pch = 19,    col  = "gray50")
+#' points(demand.m.b$buy.2 , pch = 18,    col  = "gray50")
+#' points(demand.m.b$buy.1.2 , pch = 17,    col  = "gray10")
+#' legend("topright", col = c("transparent","gray80","gray50 ", "gray50 ","gray10"),
+#' pch=c(1,8,19,18,17), legend=c("", "no buy","buy y1", "buy y2" , "buy bundle"), bty="n")
+#' abline(a=demand.m.b$p.b, b= -1, lty = 2)
+#' abline(h = demand.m.b$p.1, v = demand.m.b$p.2, lty = 2)
 #'
 #' @export
 
