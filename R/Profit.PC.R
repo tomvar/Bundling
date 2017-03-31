@@ -18,7 +18,7 @@
 #'  buy.2   - number of consumers which buy good 2
 #'  buy.1.2 - number of consumers which buy separately good 1 and good 2
 #'
-#' @examples
+#' @example
 #' r1.r2 <- r1.r2.cable  # Valuations of TV and Internet
 #' price.pc <- c(20, 30) # monopoly price of TV and Internet
 #' demand.p.c -> Profit.PC(r1.r2,price.pc,0,0,0,0,0,0)
