@@ -71,4 +71,4 @@ Max.Profit.PC  <- function(r1.r2, p.1.min.max, p.2.min.max, c.1, c.2, alfa, beta
     max.profit.p.1     = max.profit[1,4]*numerate,
     max.profit.p.2     = max.profit[1,5]*numerate)
 
-}
+  return(output.max.PC)}

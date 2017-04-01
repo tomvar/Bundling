@@ -77,4 +77,4 @@ Zero.Profit.PC  <- function(r1.r2, p.1.min.max, p.2.min.max, c.1, c.2, alfa, bet
     zero.profit.p.1     = zero.profit[1,4]*numerate,
     zero.profit.p.2     = zero.profit[1,5]*numerate)
 
-}
+return(output.Zero.Profit.PC) }
