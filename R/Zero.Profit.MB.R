@@ -52,9 +52,9 @@ Zero.Profit.MB  <- function(r1.r2,p.1.min.max, p.2.min.max, p.b.min.max,c.1,c.2,
   ########################
 
   step <-  0.01
-  p.1.min.max <- c(max.profit[1,4]-0.1,max.profit[1,4]+0.1)
-  p.2.min.max <- c(max.profit[1,5]-0.1,max.profit[1,5]+0.1)
-  p.b.min.max <- c(max.profit[1,6]-0.1,max.profit[1,6]+0.1)
+  p.1.min.max <- c(zero.profit[1,4]-0.1,zero.profit[1,4]+0.1)
+  p.2.min.max <- c(zero.profit[1,5]-0.1,zero.profit[1,5]+0.1)
+  p.b.min.max <- c(zero.profit[1,6]-0.1,zero.profit[1,6]+0.1)
   prices.mb <- Prices.MB(p.1.min.max, p.2.min.max, p.b.min.max, step)
 
   output.i <-foreach(i = prices.mb[,1], j = prices.mb[,2], k = prices.mb[,3], .combine="rbind",.packages = "bundling", .multicombine=TRUE) %dopar% {
@@ -76,9 +76,9 @@ Zero.Profit.MB  <- function(r1.r2,p.1.min.max, p.2.min.max, p.b.min.max,c.1,c.2,
   ########################
 
   step <-  0.001
-  p.1.min.max <- c(max.profit[1,4]-0.01,max.profit[1,4]+0.01)
-  p.2.min.max <- c(max.profit[1,5]-0.01,max.profit[1,5]+0.01)
-  p.b.min.max <- c(max.profit[1,6]-0.01,max.profit[1,6]+0.01)
+  p.1.min.max <- c(zero.profit[1,4]-0.01,zero.profit[1,4]+0.01)
+  p.2.min.max <- c(zero.profit[1,5]-0.01,zero.profit[1,5]+0.01)
+  p.b.min.max <- c(zero.profit[1,6]-0.01,zero.profit[1,6]+0.01)
   prices.mb <- Prices.MB(p.1.min.max, p.2.min.max, p.b.min.max, step)
 
   output.i <-foreach(i = prices.mb[,1], j = prices.mb[,2], k = prices.mb[,3], .combine="rbind",.packages = "bundling", .multicombine=TRUE) %dopar% {
