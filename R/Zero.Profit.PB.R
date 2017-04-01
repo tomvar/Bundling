@@ -13,7 +13,7 @@
 #'
 #' @export
 
-Max.Profit.PB  <- function(r1.r2, pb.min.max, c.1, c.2, alfa, beta,teta, FC) {
+Zero.Profit.PB  <- function(r1.r2, pb.min.max, c.1, c.2, alfa, beta,teta, FC) {
 
   numerate <- max(pb.min.max)
 
