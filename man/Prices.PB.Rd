@@ -2,16 +2,20 @@
 % Please edit documentation in R/Prices.PB.R
 \name{Prices.PB}
 \alias{Prices.PB}
-\title{This function create wector of prices for Pure Components}
+\title{This function creates a sequencees of prices of bundling of goods p.1 and p.2
+It will be searched to find price that maximizes profits in PB strategy}
 \usage{
 Prices.PB(pb.min.max, step)
 }
 \arguments{
-\item{pb.min.max}{Vector}
+\item{pb.min.max}{Minimum and maximum value of price of bundle [pb.min.max <- c(pb.min, pb.max)]}
+
+\item{step}{Increment of the sequences}
 }
 \value{
-wector of prices for Pure Bundling
+A sequences of prices of bundle (from pb.min to pb.max by step)
 }
 \description{
-This function create wector of prices for Pure Components
+This function creates a sequencees of prices of bundling of goods p.1 and p.2
+It will be searched to find price that maximizes profits in PB strategy
 }

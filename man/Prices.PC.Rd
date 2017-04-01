@@ -2,18 +2,24 @@
 % Please edit documentation in R/Prices.PC.R
 \name{Prices.PC}
 \alias{Prices.PC}
-\title{This function create wector of prices for Pure Components}
+\title{This function creates a vector of combination p.1 and p.2 from sequences of prices p.1 and p.2
+It will be searched to find prices that maximize profits in PC strategy}
 \usage{
 Prices.PC(p1.min.max, p2.min.max, step)
 }
 \arguments{
-\item{p.1.min.max}{Vector}
+\item{step}{Increment of the sequences}
 
-\item{p.2.min.max}{dfg}
+\item{p.1.min.max}{Minimum and maximum value of price p1 [p.1.min.max <- c(p.1.min, p.1.max)]}
+
+\item{p.2.min.max}{Minimum and maximum value of price p2 [p.2.min.max <- c(p.2.min, p.2.max)]}
 }
 \value{
-wector of prices for Pure Components
+A vector of all possible combinations of p.1 and p.2 from sequences of prices:
+(from p.1.min, p.1.max by step),
+(from p.2.min, p.2.max by step).
 }
 \description{
-This function create wector of prices for Pure Components
+This function creates a vector of combination p.1 and p.2 from sequences of prices p.1 and p.2
+It will be searched to find prices that maximize profits in PC strategy
 }
