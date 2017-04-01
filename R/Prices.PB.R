@@ -1,8 +1,10 @@
-#' This function create wector of prices for Pure Components
+#' This function creates a sequencees of prices of bundling of goods p.1 and p.2
+#' It will be searched to find price that maximizes profits in PB strategy
 #'
-#' @param pb.min.max Vector
+#' @param pb.min.max Minimum and maximum value of price of bundle [pb.min.max <- c(pb.min, pb.max)]
+#' @param step Increment of the sequences
 #'
-#' @return wector of prices for Pure Bundling
+#' @return A sequences of prices of bundle (from pb.min to pb.max by step)
 #'
 #' @export
 

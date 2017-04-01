@@ -1,7 +1,15 @@
-#' This function create wector of prices for Mixt Bundling
-#' @param pb.min.max Vector
+#' This function creates a vector of combination from sequences of prices p.1, p.2 and pb
+#' It will be searched to find prices that maximize profits in MB strategy
 #'
-#' @return wector of prices for Mixt Bundling
+#' @param p.1.min.max Minimum and maximum value of price p1 [p.1.min.max <- c(p.1.min, p.1.max)]
+#' @param p.2.min.max Minimum and maximum value of price p2 [p.2.min.max <- c(p.2.min, p.2.max)]
+#' @param pb.min.max Minimum and maximum value of price of bundle [pb.min.max <- c(pb.min, pb.max)]
+#' @param step Increment of the sequences
+#'
+#' @return A vector of all possible combinations of p.1, p.2 and pb from sequences of prices:
+#' (from p.1.min, p.1.max by step),
+#' (from p.2.min, p.2.max by step),
+#' (from pb.min to pb.max by step).
 #'
 #' @export
 
