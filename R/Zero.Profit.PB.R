@@ -16,16 +16,14 @@
 Zero.Profit.PB  <- function(r1.r2, pb.min.max, c.1, c.2, alfa, beta,teta, FC) {
 
   numerate <- max(pb.min.max)
-
   FC  <- FC/numerate
   c.1 <- c.1/numerate
   c.2 <- c.2/numerate
   r1.r2 <- data.frame(r1.r2)/numerate
-
   pb.min.max <- pb.min.max/numerate
+
   step <- 0.001
   prices.pb <- Prices.PB(pb.min.max, step)
-
 
   output.i <-foreach(i = prices.pb, .combine="rbind",.packages = "bundling", .multicombine=TRUE) %dopar% {
     p.b <- i  # price Pure Bundling
@@ -41,7 +39,6 @@ Zero.Profit.PB  <- function(r1.r2, pb.min.max, c.1, c.2, alfa, beta,teta, FC) {
   zero.profit <- matrix((zero.profit[zero.profit[,2] == ind.max.c.s]),ncol = 4, byrow = FALSE)
 
   remove("output")
-
 
   output.zero.profit.PB   <-
     list(
