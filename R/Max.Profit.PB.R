@@ -50,16 +50,9 @@ Max.Profit.PB  <- function(r1.r2, pb.min.max, c.1, c.2, alfa, beta,teta, FC) {
 
   output.max.PB   <-
     list(
-
       max.profit         = max.profit[1,1]*numerate,
       max.profit.c.s     = max.profit[1,2]*numerate,
       max.profit.t.c     = max.profit[1,3]*numerate,
-      max.profit.p.b     = max.profit[1,4]*numerate,
-
-      zero.profit.aprox   = zero.profit[1,1]*numerate,
-      zero.profit.c.s     = zero.profit[1,2]*numerate,
-      zero.profit.t.c     = zero.profit[1,3]*numerate,
-      zero.profit.p.b     = zero.profit[1,4]*numerate)
-
+      max.profit.p.b     = max.profit[1,4]*numerate)
   return(output.max.PB)
 }
